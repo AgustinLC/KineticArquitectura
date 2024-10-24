@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Kinect</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Fondo de video -->
+        <video id="fondo-video" autoplay loop muted>
+            <source src="assets/god-of-war.mp4" type="video/mp4">
+        </video>
+
+        <!-- Música -->
+        <audio id="musica-fondo" loop>
+            <source src="assets/audiomachine.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Área de visualización central -->
+        <div class="visualizacion-central">
+            <img src="/assets/logo.png"></img>
+        </div>
+
+        <!-- Botones de control -->
+        <div class="botones-control">
+            <button class="boton" id="boton-inicio">INICIO</button>
+            <button class="boton" id="boton-pausa">Cargar partida</button>
+            <button class="boton" id="boton-stop">Opciones</button>
+        </div>
+
+    </div>
+
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>

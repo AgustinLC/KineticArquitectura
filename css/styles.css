@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Runas vikingas';
+    src: url('/fonts/Norsebold.otf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    cursor: url('/assets/dwarven_gauntlet.png'), auto;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fondo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+img {
+    max-width: 700px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.visualizacion-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.botones-control {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.boton {
+    background-color: #703e05;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border: 3px solid #a52a2a;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-family: 'Runas vikingas', serif;
+    border-radius: 10px;
+    cursor: url('/assets/dwarven_gauntlet.png'), auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #5e5e5e;
+    background-size: cover;
+    background-position: center;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-color: #7c2100;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.navegacion {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    color: #ccc;
+}
